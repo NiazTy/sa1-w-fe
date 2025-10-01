@@ -19,7 +19,7 @@ loginBtn.addEventListener("click", async () => {
   if (!username || !password) return;
 
   try {
-    const res = await fetch("http://localhost:3000/auth/login", {
+    const res = await fetch("https://sa1-w.vercel.app/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password }),
@@ -60,7 +60,7 @@ chatForm.addEventListener("submit", async (e) => {
   messageInput.value = "";
 
   try {
-    const res = await fetch("http://localhost:3000/sa1", {
+    const res = await fetch("https://sa1-w.vercel.app/sa1", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
